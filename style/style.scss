@@ -39,10 +39,141 @@ font-face {
 
 }
 
+body:after {
+  //UNCOMMENT the next line to hide grid
+  //display:none !important;
+}
+
+//TYPE
+
+h1 {
+
+}
+
+h2 {
+  margin: 0 0 $baseline;
+}
+
+h3 {
+
+}
+
+h4 {
+
+}
+
+h5 {
+
+}
+
+p {
+    max-width: 33em;
+}
+
+
+//GLOBAL ELEMENTS
+
 html, body {
+ margin:0;
  font-family:'CalendasPlus', 'helvetica', sans-serif;
+ font-size: $font-base;
+ line-height: $baseline;
+ color: #555;
+ display: flex;
+ justify-content: center;
+}
+
+a, a:link {
+
+  &:hover {
+
+  }
+
+  &:visited {
+
+  }
+}
+
+//SECTIONS
+
+section {
+
+}
+
+.container {
+  width: 80vw;
 }
 
 header {
-  text-align: center;
+display:flex;
+justify-content: space-between;
+align-items: center;
+border-bottom: 1px solid #ddd;
+padding: 0 $baseline;
+height: ($baseline*2)-1;
+
+  #site-banner {
+    font-size: $font-base*.75;
+    margin:0;
+  }
+
+  .nav-menu {
+    display: flex;
+    justify-content: space-around;
+    margin:0;
+
+    li {
+      list-style: none;
+
+      a, a:link {
+        text-decoration: none;
+        padding: $baseline/2 $baseline;
+        color:#676767;
+        transition: background-color .4s;
+
+
+        &:hover {
+          background-color: #efefef;
+        }
+
+        &:visited {
+
+        }
+      }
+    }
+  }
+}
+
+main {
+
+  &>section {
+    padding: $baseline;
+  }
+
+  #intro {
+    height:$baseline*15;
+    display: flex;
+    justify-content:flex-start;
+    align-items: center;
+
+    p {
+      font-size: $font-base*2;
+      line-height: $baseline*2;
+      width: 50vw;
+    }
+  }
+
+  #about {
+    height: $baseline*25;
+    background-color: #eee;
+
+  }
+
+  #work {
+
+  }
+
+  #contact {
+
+  }
 }

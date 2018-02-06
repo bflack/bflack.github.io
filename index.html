@@ -4,7 +4,7 @@
   <head>
     <title>This Whole City</title>
     <link rel="stylesheet" type="text/css" href="style/style.css">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="js/jquery-3.3.1.min.js"></script>
 
     <link rel="stylesheet" href="https://basehold.it/30/dedede">
   </head>
@@ -12,23 +12,26 @@
   <body>
     <div class="container">
     <header id="header">
-      <h1 id="site-banner">THIS WHOLE CITY</h1>
-<nav>
-  <ul class="nav-menu">
-    <li>
-      <a href="#header">Home</a>
-    </li>
-    <li>
-      <a href="#about">About</a>
-    </li>
-    <li>
-      <a href="#work">Work</a>
-    </li>
-    <li>
-      <a href="#contact">Contact</a>
-    </li>
-  </ul>
-</nav>
+      <div class="header-inner">
+
+        <h1 id="site-banner">THIS WHOLE CITY</h1>
+        <nav>
+          <ul class="nav-menu">
+            <li>
+              <a href="#header">Home</a>
+            </li>
+            <li>
+              <a href="#client-stories">Client Stories</a>
+            </li>
+            <li>
+              <a href="#about">About</a>
+            </li>
+            <li>
+              <a href="#contact">Contact</a>
+            </li>
+          </ul>
+        </nav>
+        </div>
     </header>
 
     <main>
@@ -38,13 +41,43 @@
           </p>
       </section>
 
-      <section id="about">
-        <h2>About</h2>
-        <p>We create logos, brand identities, and web sites that communicate your brand's sincere desire to help your customer.</p>
+      <section id="client-stories">
+        <h2>Client Stories</h2>
+
+        <div class="client-stories-inner">
+            <a class="story-card eeb" href="https://www.behance.net/gallery/37829865/Valley-Hymns-for-Travelers" target="_blank">
+              <h3 class="story-card-title">Elise Erikson Barrett</h3>
+              <ul class="story-categories">
+                <li>Album Identity</li>
+                <li>Package Design</li>
+              </ul>
+
+            </a>
+
+            <a class="story-card fcp" href="https://www.behance.net/gallery/34717669/FastCast-Podcast-Logo" target="_blank">
+              <h3 class="story-card-title">FastCast+ Podcast</h3>
+              <ul class="story-categories">
+                <li>Logo</li>
+                <li>Website</li>
+              </ul>
+
+            </a>
+
+            <a class="story-card ncc" href="https://www.behance.net/gallery/31431457/New-City-Church-Logo" target="_blank">
+              <h3 class="story-card-title">New City Church</h3>
+              <ul class="story-categories">
+                <li>Logo</li>
+                <li>Brand Identity</li>
+              </ul>
+
+            </a>
+        </div>
 
       </section>
 
-      <section id="work">
+      <section id="about">
+        <h2>About</h2>
+        <p>We create logos, brand identities, and web sites that communicate your brand's sincere desire to help your customer.</p>
 
       </section>
 
@@ -59,7 +92,7 @@
   </body>
 <script>
 function scrollNav() {
-  $('.nav a').click(function(){
+  $('.nav-menu a').click(function(){
     //Toggle Class
     $(".active").removeClass("active");
     $(this).closest('li').addClass("active");

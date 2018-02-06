@@ -23,8 +23,12 @@ h2 {
 p {
   max-width: 33em; }
 
+ul, ol {
+  padding: 0; }
+
 html, body {
   margin: 0;
+  padding: 0;
   font-family: 'CalendasPlus', 'helvetica', sans-serif;
   font-size: 20px;
   line-height: 30px;
@@ -36,14 +40,16 @@ html, body {
   width: 80vw; }
 
 header {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
   border-bottom: 1px solid #ddd;
-  padding: 0 30px;
-  height: 59px; }
+  background-color: #fff; }
+  header .header-inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 30px;
+    height: 59px; }
   header #site-banner {
-    font-size: 15px;
+    font-size: 30px;
     margin: 0; }
   header .nav-menu {
     display: flex;
@@ -59,8 +65,41 @@ header {
         header .nav-menu li a:hover, header .nav-menu li a:link:hover {
           background-color: #efefef; }
 
+a.story-card {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 210px;
+  min-width: 30%;
+  background: #555;
+  box-sizing: border-box;
+  padding: 15px 30px;
+  margin: 15px 0;
+  text-decoration: none;
+  color: #efefef;
+  text-align: center;
+  background-size: cover;
+  background-position: center;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.3); }
+  a.story-card h3.story-card-title {
+    -webkit-margin-before: 15px;
+    -webkit-margin-after: 0;
+    opacity: 0; }
+  a.story-card ul {
+    list-style: none;
+    opacity: 0; }
+    a.story-card ul li {
+      font-size: 13.2px; }
+  a.story-card.eeb {
+    background-image: url("../img/eeb.jpg"); }
+  a.story-card.fcp {
+    background-image: url("../img/fcp.jpg"); }
+  a.story-card.ncc {
+    background-image: url("../img/ncc.jpg"); }
+
 main > section {
-  padding: 30px; }
+  padding: 30px;
+  margin-top: 60px; }
 main #intro {
   height: 450px;
   display: flex;
@@ -70,8 +109,13 @@ main #intro {
     font-size: 40px;
     line-height: 60px;
     width: 50vw; }
+main #client-stories {
+  background-color: #fafafa; }
+  main #client-stories .client-stories-inner {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between; }
 main #about {
-  height: 750px;
-  background-color: #eee; }
+  height: 750px; }
 
 /*# sourceMappingURL=style.css.map */

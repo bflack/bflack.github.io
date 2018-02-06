@@ -70,11 +70,20 @@ p {
     max-width: 33em;
 }
 
+ul, ol {
+  padding: 0;
+
+  li {
+
+  }
+}
+
 
 //GLOBAL ELEMENTS
 
 html, body {
  margin:0;
+ padding:0;
  font-family:'CalendasPlus', 'helvetica', sans-serif;
  font-size: $font-base;
  line-height: $baseline;
@@ -105,15 +114,22 @@ section {
 }
 
 header {
-display:flex;
-justify-content: space-between;
-align-items: center;
+//position: -webkit-sticky;
+
 border-bottom: 1px solid #ddd;
-padding: 0 $baseline;
-height: ($baseline*2)-1;
+
+background-color: #fff;
+
+.header-inner {
+  display:flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 $baseline;
+  height: ($baseline*2)-1;
+}
 
   #site-banner {
-    font-size: $font-base*.75;
+    font-size: $font-base*1.5;
     margin:0;
   }
 
@@ -144,10 +160,63 @@ height: ($baseline*2)-1;
   }
 }
 
+a.story-card {
+  display:flex;
+  flex-direction: column;
+  justify-content: space-between;;
+  height: $baseline*7;
+  min-width: 30%;
+  background: #555;
+  box-sizing: border-box;
+  padding: $baseline*0.5 $baseline;
+  margin: $baseline*0.5 0;
+  text-decoration: none;
+  color: #efefef;
+  text-align: center;
+  background-size: cover;
+  background-position: center;
+  box-shadow: 0 0 15px rgba(0,0,0,0.3);
+  //-webkit-clip-path: circle(50% at 50% 50%);
+  //clip-path: circle(50% at 50% 50%);
+
+  h3.story-card-title {
+    -webkit-margin-before: $baseline*0.5;
+    -webkit-margin-after: 0;
+
+    opacity:0;
+
+  }
+
+  ul {
+    list-style: none;
+    opacity: 0;
+
+    li {
+      font-size: $font-base*.66;
+    }
+  }
+
+  &.eeb {
+    background-image: url("../img/eeb.jpg");
+  }
+
+  &.fcp {
+    background-image: url("../img/fcp.jpg");
+
+  }
+
+  &.ncc {
+    background-image: url("../img/ncc.jpg");
+
+  }
+
+}
+
 main {
 
   &>section {
     padding: $baseline;
+    margin-top: $baseline*2;
   }
 
   #intro {
@@ -163,15 +232,25 @@ main {
     }
   }
 
+
+  #client-stories {
+    //height: $baseline*25;
+    background-color: #fafafa;
+
+
+    .client-stories-inner {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+    }
+
+  }
+
   #about {
     height: $baseline*25;
-    background-color: #eee;
 
   }
 
-  #work {
-
-  }
 
   #contact {
 

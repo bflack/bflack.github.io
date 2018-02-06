@@ -72,29 +72,36 @@ header {
         header .social-menu li a:hover, header .social-menu li a:link:hover {
           background-color: #efefef; }
 
-a.story-card {
+.story-card {
   display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  height: 210px;
-  min-width: 30%;
-  background: #555;
-  box-sizing: border-box;
-  padding: 15px 30px;
+  justify-content: center;
+  align-items: center;
+  padding: 30px;
   margin: 15px 0;
-  text-decoration: none;
-  color: #efefef;
-  text-align: center;
-  background-size: cover;
-  background-position: center;
-  box-shadow: 0 0 15px rgba(0, 0, 0, 0.3); }
-  a.story-card h3.story-card-title {
-    -webkit-margin-before: 15px;
-    -webkit-margin-after: 0; }
-  a.story-card ul {
-    list-style: none; }
-    a.story-card ul li {
-      font-size: 13.2px; }
+  background-color: #fafafa; }
+  .story-card .story-card-header {
+    text-align: center;
+    margin: 0 15px; }
+  .story-card .story-img {
+    height: 150px;
+    width: 150px;
+    -webkit-clip-path: circle(50% at 50% 50%);
+    clip-path: circle(50% at 50% 50%); }
+  .story-card h3.story-card-title {
+    font-size: 13.2px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin: 0 0 7.5px 0; }
+  .story-card .story-body {
+    flex-direction: column;
+    justify-content: space-around;
+    margin: 0 15px;
+    max-width: 33rem; }
+  .story-card .story-quote {
+    margin: 0;
+    font-size: 20px;
+    line-height: 30px;
+    font-style: italic; }
 
 main > section {
   padding: 30px;
@@ -107,12 +114,6 @@ main #intro {
     font-size: 40px;
     line-height: 60px;
     width: 14em; }
-main #client-stories {
-  background-color: #fafafa; }
-  main #client-stories .client-stories-inner {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between; }
 main #about {
   height: 750px; }
 

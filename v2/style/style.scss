@@ -41,7 +41,7 @@ font-face {
 
 body:after {
   //UNCOMMENT the next line to hide grid
-  display:none !important;
+  //display:none !important;
 }
 
 //TYPE
@@ -68,7 +68,6 @@ h5 {
 
 p {
     max-width: 33em;
-    margin:0 0 $baseline;
 }
 
 ul, ol {
@@ -134,22 +133,20 @@ background-color: #fff;
     margin:0;
   }
 
-  .social-menu {
+  .nav-menu {
     display: flex;
     justify-content: space-around;
     margin:0;
-    padding: 0;
 
     li {
       list-style: none;
-      padding: 0;
 
       a, a:link {
-        font-size: $font-base*.66;
         text-decoration: none;
-        padding: $baseline/2 $baseline/2;
+        padding: $baseline/2 $baseline;
         color:#676767;
         transition: background-color .4s;
+
 
         &:hover {
           background-color: #efefef;
@@ -161,21 +158,7 @@ background-color: #fff;
       }
     }
   }
-
-
-} //end header
-
-// .avatar-wrapper {
-//   text-align: center;
-//   margin: 0 auto;
-// }
-//
-// .avatar {
-//   height: $baseline*8;
-//   width: $baseline*8;
-//   -webkit-clip-path: circle(50% at 50% 50%);
-//   clip-path: circle(50% at 50% 50%);
-// }
+}
 
 a.story-card {
   display:flex;
@@ -200,32 +183,32 @@ a.story-card {
     -webkit-margin-before: $baseline*0.5;
     -webkit-margin-after: 0;
 
-    //opacity:0;
+    opacity:0;
 
   }
 
   ul {
     list-style: none;
-    //opacity: 0;
+    opacity: 0;
 
     li {
       font-size: $font-base*.66;
     }
   }
 
-  // &.eeb {
-  //   background-image: url("../img/eeb.jpg");
-  // }
-  //
-  // &.fcp {
-  //   background-image: url("../img/fcp.jpg");
-  //
-  // }
-  //
-  // &.ncc {
-  //   background-image: url("../img/ncc.jpg");
-  //
-  // }
+  &.eeb {
+    background-image: url("../img/eeb.jpg");
+  }
+
+  &.fcp {
+    background-image: url("../img/fcp.jpg");
+
+  }
+
+  &.ncc {
+    background-image: url("../img/ncc.jpg");
+
+  }
 
 }
 
@@ -237,14 +220,15 @@ main {
   }
 
   #intro {
+    height:$baseline*15;
     display: flex;
-    justify-content:space-between;
-    flex-wrap: wrap;
+    justify-content:flex-start;
+    align-items: center;
 
     p {
       font-size: $font-base*2;
       line-height: $baseline*2;
-      width: 14em;
+      width: 50vw;
     }
   }
 

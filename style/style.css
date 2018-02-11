@@ -20,8 +20,23 @@ font-face {
 body:after {
   display: none !important; }
 
+h1 {
+  font-size: 100px; }
+
 h2 {
+  font-size: 75px;
+  font-style: italic;
   margin: 0 0 30px; }
+
+h3 {
+  font-size: 50px; }
+
+h4 {
+  font-size: 25px; }
+
+h5 {
+  font-size: 20px;
+  font-weight: bold; }
 
 p {
   max-width: 33em;
@@ -72,36 +87,51 @@ header {
         header .social-menu li a:hover, header .social-menu li a:link:hover {
           background-color: #efefef; }
 
-.story-card {
+.quote-card {
   display: flex;
   justify-content: center;
   align-items: center;
   padding: 30px;
   margin: 15px 0;
   background-color: #fafafa; }
-  .story-card .story-card-header {
+  .quote-card .quote-card-img-wrapper {
     text-align: center;
     margin: 0 15px; }
-  .story-card .story-img {
+  .quote-card .quote-img {
     height: 150px;
     width: 150px;
     -webkit-clip-path: circle(50% at 50% 50%);
     clip-path: circle(50% at 50% 50%); }
-  .story-card h3.story-card-title {
-    font-size: 13.2px;
-    text-transform: uppercase;
-    letter-spacing: 1px;
-    margin: 0 0 7.5px 0; }
-  .story-card .story-body {
+  .quote-card .quote-body {
     flex-direction: column;
     justify-content: space-around;
     margin: 0 15px;
     max-width: 33rem; }
-  .story-card .story-quote {
+  .quote-card .client-blockquote {
     margin: 0;
     font-size: 20px;
     line-height: 30px;
     font-style: italic; }
+  .quote-card cite.quote-card-title {
+    font-size: 13.2px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin: 0 0 7.5px 0; }
+
+.client-story-link {
+  display: block;
+  text-decoration: none;
+  text-align: center;
+  padding: 30px;
+  margin: 30px;
+  background-repeat: no-repeat;
+  background-size: contain; }
+  .client-story-link.eeb {
+    background-image: url("../img/eeb.jpg"); }
+  .client-story-link.fcp {
+    background-image: url("../img/fcp.jpg"); }
+  .client-story-link.ncc {
+    background-image: url("../img/ncc.jpg"); }
 
 main > section {
   padding: 30px;
@@ -114,6 +144,8 @@ main #intro {
     font-size: 40px;
     line-height: 60px;
     width: 14em; }
+main #client-stories .client-stories-title {
+  text-align: center; }
 main #about {
   height: 750px; }
 

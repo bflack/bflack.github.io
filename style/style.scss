@@ -39,6 +39,7 @@ font-face {
 
 }
 
+
 body:after {
   //UNCOMMENT the next line to hide grid
   display:none !important;
@@ -47,23 +48,26 @@ body:after {
 //TYPE
 
 h1 {
-
+  font-size: $font-base*($font-scale*4);
 }
 
 h2 {
+  font-size: $font-base*($font-scale*3);
+  font-style: italic;
   margin: 0 0 $baseline;
 }
 
 h3 {
-
+  font-size: $font-base*($font-scale*2);
 }
 
 h4 {
-
+  font-size: $font-base*($font-scale);
 }
 
 h5 {
-
+  font-size: $font-base;
+  font-weight: bold;
 }
 
 p {
@@ -177,7 +181,7 @@ background-color: #fff;
 //   clip-path: circle(50% at 50% 50%);
 // }
 
-.story-card {
+.quote-card {
   display:flex;
   justify-content: center;
   align-items: center;
@@ -186,54 +190,68 @@ background-color: #fff;
   background-color: #fafafa;
 
 
-.story-card-header {
+.quote-card-img-wrapper {
   text-align: center;
   margin:0 $baseline*.5;
 }
 
-  .story-img {
+  .quote-img {
     height: $baseline*5;
     width: $baseline*5;
     -webkit-clip-path: circle(50% at 50% 50%);
     clip-path: circle(50% at 50% 50%);
   }
 
-  h3.story-card-title {
-    font-size: $font-base*.66;
-    text-transform: uppercase;
-    letter-spacing: $font-base*.05;
-    margin: 0 0 $baseline*0.25 0;
-  }
-
-  .story-body {
+  .quote-body {
     flex-direction: column;
     justify-content: space-around;
     margin:0 $baseline*.5;
     max-width: 33rem;
   }
 
-  .story-quote {
+  .client-blockquote {
     margin: 0;
     font-size: $font-base;
     line-height: $baseline;
     font-style: italic;
   }
 
-  // &.eeb {
-  //   background-image: url("../img/eeb.jpg");
-  // }
-  //
-  // &.fcp {
-  //   background-image: url("../img/fcp.jpg");
-  //
-  // }
-  //
-  // &.ncc {
-  //   background-image: url("../img/ncc.jpg");
-  //
-  // }
+  cite.quote-card-title {
+    font-size: $font-base*.66;
+    text-transform: uppercase;
+    letter-spacing: $font-base*.05;
+    margin: 0 0 $baseline*0.25 0;
+  }
+
+
 
 }
+
+.client-story-link {
+
+  display: block;
+
+  text-decoration: none;
+  text-align: center;
+  padding: $baseline;
+  margin: $baseline;
+  background-repeat: no-repeat;
+  background-size: contain;
+
+
+  &.eeb {
+    background-image: url("../img/eeb.jpg");
+  }
+
+  &.fcp {
+    background-image: url("../img/fcp.jpg");
+  }
+
+  &.ncc {
+    background-image: url("../img/ncc.jpg");
+
+  }
+} //end client-story-link
 
 main {
 
@@ -256,10 +274,10 @@ main {
 
 
   #client-stories {
-    //height: $baseline*25;
 
 
-    .client-stories-inner {
+    .client-stories-title {
+      text-align: center;
 
     }
 

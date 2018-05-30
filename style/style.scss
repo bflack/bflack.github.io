@@ -232,14 +232,11 @@ main {
         font-size: $font-base*.66;
         text-decoration: none;
         padding: $baseline/2 $baseline/2;
-        //color:#676767;
         color:#E62E59;
-        transition: background-color .4s;
 
         @media screen and (max-width: 719px) {
           display: inline-block;
           width: 100%;
-
 
         }
 

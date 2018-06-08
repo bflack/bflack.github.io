@@ -58,7 +58,9 @@ html, body {
 
 body {
   display: flex;
-  justify-content:center;
+  flex-direction: column;
+  justify-content: space-between;
+  align-content:center;
  min-height: 100vh;
 
 }
@@ -82,10 +84,9 @@ section {
 
 .container {
   width: 80vw;
-  min-height: 100vh;
   display: flex;
   flex-direction: column;
-  justify-content:space-between;
+  //justify-content:space-between;
   margin: 0 auto;
 }
 
@@ -96,14 +97,14 @@ header {
   margin-bottom: $baseline;
 
   h1 {
-    margin: $baseline*.5 0;
+    margin: $baseline 0;
   }
 
   p {
     font-size: $font-base*1.5;
     text-align: center;
     line-height: $baseline*1.5;
-    max-width: 14em;
+    max-width: 22em;
 
     @media screen and (max-width: 320px) {
       font-size: $font-base;
@@ -149,13 +150,8 @@ main {
 
   #actions {
    display: flex;
-  ///lex-direction: column;
-  justify-content: center;
-  //text-align: center;
-
-  @media screen and (max-width: 719px) {
-    flex-direction: column;
-  }
+   flex-direction: column;
+   justify-content: center;
 
 
     a, a:link {
@@ -164,10 +160,10 @@ main {
       text-decoration: none;
       font-weight: bold;
       color: #555;
-      padding: $baseline*0.5 $baseline ($baseline*0.5)-5 $baseline;
+      padding: $baseline*0.25 $baseline ($baseline*0.25)-2 $baseline;
       //border-radius: 3px;
-      margin: 0 $baseline;
-      border-bottom: 5px solid #D1EFD1;
+      margin: $baseline*.25 $baseline;
+      border-bottom: 2px solid #D1EFD1;
 
       @media screen and (max-width: 719px) {
         margin: $baseline/2 0;
@@ -176,7 +172,8 @@ main {
 
       &:hover {
         //border: 1px solid #555;
-        background: #D1EFD1;
+        //background: #D1EFD1;
+        border-color: #E62E59;
       }
     }
 
@@ -190,7 +187,6 @@ main {
   display:flex;
   justify-content: space-between;
   align-items: center;
-  margin-top: $baseline*2;
   padding: 0 $baseline;
   height: ($baseline*2)-1;
 

@@ -148,12 +148,12 @@ main {
     @media screen and (max-width: 719px) {
       .footer .social-menu {
         flex-direction: column;
-        padding: 15px;
         width: 100%; } }
     .footer .social-menu li {
       list-style: none;
       padding: 0;
-      text-align: center; }
+      text-align: center;
+      width: 100%; }
       .footer .social-menu li a, .footer .social-menu li a:link {
         font-size: 13.2px;
         text-decoration: none;
@@ -161,8 +161,7 @@ main {
         color: #E62E59; }
         @media screen and (max-width: 719px) {
           .footer .social-menu li a, .footer .social-menu li a:link {
-            display: inline-block;
-            width: 100%; } }
+            display: inline-flex; } }
         .footer .social-menu li a:hover, .footer .social-menu li a:link:hover {
           background-color: #efefef; }
 

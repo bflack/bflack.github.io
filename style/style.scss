@@ -100,6 +100,16 @@ header {
     margin: $baseline 0;
   }
 
+  .twc-logo {
+    height: $baseline*8;
+    width: $baseline*8;
+    fill:#414042;
+  }
+
+  .site-title {
+    display: none;
+  }
+
   p {
     font-size: $font-base*1.5;
     text-align: center;
@@ -118,15 +128,76 @@ header {
 
   }
 
-.twc-logo {
-  height: $baseline*8;
-  width: $baseline*8;
-  fill:#414042;
-}
+  header#header-small {
+    margin-bottom: $baseline;
+    border-bottom: 1px solid #ddd;
 
-.site-title {
-  display: none;
-}
+    .inner {
+      width:80vw;
+      display: flex;
+      flex-direction: row;
+      justify-content: flex-start;
+      align-items: center;
+    }
+
+
+    h1 {
+      margin: $baseline*.5 $baseline $baseline*.5 $baseline*2;
+    }
+
+    .twc-logo {
+      height: $baseline*2;
+      width: $baseline*2;
+      fill:#414042;
+    }
+
+    .site-title {
+      display: none;
+    }
+
+    nav {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-around;
+      margin:0;
+      padding: 0;
+
+      li {
+        list-style: none;
+        padding: 0;
+        text-align: center;
+        width: 100%;
+
+
+        a, a:link {
+          font-size: $font-base;
+          font-weight: bold;
+          text-decoration: none;
+          padding: $baseline/2 $baseline/2;
+          color:#555;
+
+          @media screen and (max-width: 719px) {
+            display: inline-flex;
+            //width: 100%;
+
+          }
+
+          &:hover {
+            //background-color: #efefef;
+            color:#E62E59;
+          }
+
+          &:visited {
+
+          }
+        }
+      }
+    }
+
+
+    }
+
+
 
 
 main {
@@ -151,8 +222,11 @@ main {
 
   #actions {
    display: flex;
-   flex-direction: column;
    justify-content: center;
+
+   @media screen and (max-width: 719px) {
+     flex-direction: column;
+   }
 
 
     a, a:link {

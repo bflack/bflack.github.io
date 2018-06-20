@@ -144,8 +144,9 @@ main {
 
 #actions {
   display: flex;
+  flex-direction: row;
   justify-content: center; }
-  @media screen and (max-width: 719px) {
+  @media screen and (max-width: 849px) {
     #actions {
       flex-direction: column; } }
   #actions a, #actions a:link {

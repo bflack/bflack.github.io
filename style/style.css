@@ -155,14 +155,6 @@ nav ul {
       @media screen and (max-width: 719px) {
         .inner-page aside img.feature-image {
           display: none; } }
-    .inner-page aside img.feature-image-mobile {
-      display: none;
-      margin: 30px 0; }
-      @media screen and (max-width: 719px) {
-        .inner-page aside img.feature-image-mobile {
-          display: inline;
-          object-fit: cover;
-          width: 100%; } }
     .inner-page aside .reminds-me {
       border-left: 2px solid #F2F1ED;
       margin: 15px 30px 0;
@@ -230,6 +222,14 @@ header {
         top: 50%;
         left: 2.4em;
         width: 8.2em; }
+  header img.feature-image-mobile {
+    display: none;
+    margin: 30px 0; }
+    @media screen and (max-width: 719px) {
+      header img.feature-image-mobile {
+        display: inline;
+        object-fit: cover;
+        width: 100%; } }
   header .twc-logo {
     height: 240px;
     width: 240px;

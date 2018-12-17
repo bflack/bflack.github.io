@@ -179,18 +179,6 @@ nav ul {
       }
     }
 
-    img.feature-image-mobile {
-      display: none;
-
-      margin: $baseline 0;
-
-      @media screen and (max-width: 719px) {
-        display: inline;
-        object-fit: cover;
-        width:100%;
-      }
-    }
-
     .reminds-me {
       border-left: 2px solid $grey-lt;
       //border-bottom: 1px solid #ccc;
@@ -285,6 +273,18 @@ header {
         //width: 800%;
         width: 8.2em;
       }
+    }
+  }
+
+  img.feature-image-mobile {
+    display: none;
+
+    margin: $baseline 0;
+
+    @media screen and (max-width: 719px) {
+      display: inline;
+      object-fit: cover;
+      width:100%;
     }
   }
 

@@ -273,13 +273,16 @@ main {
   border-radius: 7px; }
   #order label {
     text-align: left; }
+  #order input, #order select {
+    margin-bottom: 15px; }
   #order .input-help-text {
     display: block;
     font-size: 16px;
     color: #177317;
     font-style: italic; }
   #order .accepted-payments {
-    padding: 30px 0 0; }
+    padding: 30px 0 0;
+    max-width: 100%; }
 
 .details {
   margin: 60px 0;

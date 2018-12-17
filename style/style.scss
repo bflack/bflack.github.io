@@ -367,6 +367,10 @@ main {
 
   }
 
+  input, select {
+    margin-bottom: $baseline/2;
+  }
+
   .input-help-text {
     display: block;
     font-size: $font-base/$font-scale;
@@ -377,6 +381,7 @@ main {
 
   .accepted-payments {
     padding: $baseline 0 0;
+    max-width: 100%;
   }
 
 }

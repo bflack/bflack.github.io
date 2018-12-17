@@ -88,6 +88,10 @@ section {
   flex-direction: column;
   //justify-content:space-between;
   margin: 0 auto;
+
+  @media screen and (max-width: 719px) {
+    width: 90vw;
+  }
 }
 
 nav ul {

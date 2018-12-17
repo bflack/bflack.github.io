@@ -97,14 +97,23 @@ nav ul {
   justify-content: flex-start;
   margin: 0;
   padding: $baseline*0.5 0;
+  @media screen and (max-width: 719px) {
+    flex-wrap: wrap;
+  }
 
   li {
     list-style: none;
     padding: $baseline $baseline*0.75;
     text-align: center;
+    @media screen and (max-width: 719px) {
+      flex: 1;
+    }
 
     &.logo-link {
       padding: 0;
+      @media screen and (max-width: 719px) {
+        flex: 0 0 100%;
+      }
     }
 
     &.cta-nav-button a {
@@ -126,7 +135,6 @@ nav ul {
       &:hover {
         //background-color: #efefef;
         border-bottom: 2px solid #E62E59;
-
       }
 
       &:visited {}
@@ -135,7 +143,6 @@ nav ul {
     &:first-child a:hover {
       border-bottom: none;
     }
-
 
     .twc-logo {
       height: $baseline*3;
@@ -159,7 +166,6 @@ nav ul {
 
   aside {
     width: 40%;
-
     @media screen and (max-width: 719px) {
       width: 100%;
     }
@@ -168,6 +174,21 @@ nav ul {
       width: 100%;
       margin: $baseline $baseline 0;
       //padding: $baseline/2 $baseline;
+      @media screen and (max-width: 719px) {
+        display: none;
+      }
+    }
+
+    img.feature-image-mobile {
+      display: none;
+
+      margin: $baseline 0;
+
+      @media screen and (max-width: 719px) {
+        display: inline;
+        object-fit: cover;
+        width:100%;
+      }
     }
 
     .reminds-me {
@@ -175,6 +196,11 @@ nav ul {
       //border-bottom: 1px solid #ccc;
       margin: $baseline*0.5 $baseline 0;
       padding: $baseline/2 $baseline $baseline/2 $baseline*2;
+      @media screen and (max-width: 719px) {
+        border-left: none;
+        margin: 0 auto;
+        padding: 0 $baseline;
+      }
 
       ul {
         list-style: none;
@@ -205,6 +231,10 @@ nav ul {
   #instafeed {
     margin: $baseline*0.5 $baseline 0;
     padding: $baseline/2 0 $baseline/2 $baseline*2;
+    @media screen and (max-width: 719px) {
+      margin: $baseline*1.5 auto;
+      padding: 0;
+    }
   }
 
   article {
@@ -217,6 +247,9 @@ header {
   flex-direction: column;
   justify-content: center;
   margin: $baseline*2.5 0;
+  @media screen and (max-width: 719px) {
+    margin: $baseline 0;
+  }
 
   &#home-header {
     align-items: center;
@@ -241,7 +274,6 @@ header {
       line-height: $font-base*2;
       position: relative;
       //padding-left: 1.5px;
-
       &:after {
         background: $primary-lt;
         content: "";
@@ -252,7 +284,6 @@ header {
         left: 2.4em;
         //width: 800%;
         width: 8.2em;
-
       }
     }
   }
@@ -272,7 +303,6 @@ header {
     line-height: $baseline*1.5;
     max-width: 22em;
     margin: 0;
-
     @media screen and (max-width: 320px) {
       font-size: $font-base;
       line-height: $baseline;
@@ -329,8 +359,6 @@ main {
   justify-content: center;
   text-align: center;
   padding: $baseline;
-
-
   @media screen and (max-width: 849px) {
     flex-direction: column;
   }
@@ -368,11 +396,11 @@ main {
   border-radius: $radius;
 
   label {
-    text-align:left;
-
+    text-align: left;
   }
 
-  input, select {
+  input,
+  select {
     margin-bottom: $baseline/2;
   }
 
@@ -381,14 +409,12 @@ main {
     font-size: $font-base/$font-scale;
     color: $primary-dk;
     font-style: italic;
-
   }
 
   .accepted-payments {
     padding: $baseline 0 0;
     max-width: 100%;
   }
-
 }
 
 .details {
@@ -419,7 +445,6 @@ main {
       top: 50%;
       left: 115%;
       width: 1000%;
-
     }
   }
 
@@ -427,7 +452,9 @@ main {
     display: flex;
     align-items: baseline;
     margin-left: 5em;
-
+    @media screen and (max-width: 719px) {
+      margin-left: 0;
+    }
   }
 
   program {

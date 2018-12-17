@@ -223,9 +223,17 @@ nav ul {
   #instafeed {
     margin: $baseline*0.5 $baseline 0;
     padding: $baseline/2 0 $baseline/2 $baseline*2;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+
     @media screen and (max-width: 719px) {
       margin: $baseline*1.5 auto;
       padding: 0;
+    }
+
+    a {
+      line-height: 0;
     }
   }
 

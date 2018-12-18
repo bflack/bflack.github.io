@@ -75,6 +75,12 @@ a:link {
 
   &:visited {}
 }
+
+select {
+  @media screen and (max-width: 719px) {
+    width: 100%;
+  }
+}
 //SECTIONS
 
 section {
@@ -88,7 +94,6 @@ section {
   flex-direction: column;
   //justify-content:space-between;
   margin: 0 auto;
-
   @media screen and (max-width: 719px) {
     width: 90vw;
   }
@@ -226,7 +231,6 @@ nav ul {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-
     @media screen and (max-width: 719px) {
       margin: $baseline*1.5 auto;
       padding: 0;
@@ -273,7 +277,7 @@ header {
       display: block;
       line-height: $font-base*2;
       position: relative;
-      //padding-left: 1.5px;
+
       &:after {
         background: $primary-lt;
         content: "";
@@ -284,19 +288,20 @@ header {
         left: 2.4em;
         //width: 800%;
         width: 8.2em;
+        @media screen and (max-width: 719px) {
+          width: 5em;
+        }
       }
     }
   }
 
   img.feature-image-mobile {
     display: none;
-
     margin: $baseline 0;
-
     @media screen and (max-width: 719px) {
       display: inline;
       object-fit: cover;
-      width:100%;
+      width: 100%;
     }
   }
 

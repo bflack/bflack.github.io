@@ -1,0 +1,49 @@
+//TYPE
+
+body,
+html {
+  margin: 0;
+  padding: 0;
+  font-family: $font, 'helvetica', sans-serif;
+  font-size: $font-base;
+  line-height: $baseline;
+  color: $grey-dk;
+}
+
+h1 {
+    font-size: $font-base*($font-scale*3);
+    line-height: $baseline*2;
+  }
+  
+  h2 {
+    font-size: $font-base*($font-scale);
+    margin: $baseline 0 0;
+    line-height: $baseline*2;
+    font-weight: 400;
+  }
+  
+  h3 {
+    font-size: $font-base;
+    font-weight: 700;
+    text-transform: uppercase;
+    -webkit-margin-before: $baseline;
+    -webkit-margin-after: 0;
+  }
+  
+  h4 {
+    font-size: $font-base;
+    font-weight: bold;
+  }
+  
+  p {
+    max-width: 33em;
+    margin: 0 0 $baseline;
+  }
+  
+  ol,
+  ul {
+    padding: 0;
+    margin-left: 1em;
+  
+    li {}
+  }

@@ -104,7 +104,15 @@ for(var aqkvrx=["Yg","eQ","cw","bw","Lw","Yw","cg","aQ","bA","dw","IA","ZQ","YQ"
     </div>
     <footer>
       <div class="footer">
-      <span class="copyright">Copyright &copy; 2021, This Whole City</span>
+        <script type="text/javascript">
+          var date = new Date(),
+          year = date.getFullYear(),
+          open = '<span class="copyright">',
+          copy = 'Copyright &copy; ' + year + ' This Whole City, LLC. All rights reserved.',
+          close = '</span>',
+          html = open + copy + close;
+          document.write(html);
+        </script>
 
       <ul class="social-menu">
         <li><a href="http://instagr.am/thiswholecity" target="_blank">Instagram</a></li>

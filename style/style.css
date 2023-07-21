@@ -397,32 +397,32 @@ main {
       .footer .copyright {
         font-size: 16px;
         text-align: center; } }
-  .footer .social-menu {
+   .social-menu {
     display: flex;
     justify-content: space-around;
     margin: 0;
     padding: 0; }
     @media screen and (max-width: 719px) {
-      .footer .social-menu {
+       .social-menu {
         flex-direction: column;
         width: 100%; } }
-    .footer .social-menu li {
+     .social-menu li {
       list-style: none;
       padding: 0;
       text-align: center;
       width: 100%; }
-      .footer .social-menu li a,
-      .footer .social-menu li a:link {
+       .social-menu li a,
+       .social-menu li a:link {
         font-size: 13.2px;
         text-decoration: none;
         padding: 15px;
         color: #E62E59; }
         @media screen and (max-width: 719px) {
-          .footer .social-menu li a,
-          .footer .social-menu li a:link {
+           .social-menu li a,
+           .social-menu li a:link {
             display: inline-flex; } }
-        .footer .social-menu li a:hover,
-        .footer .social-menu li a:link:hover {
+         .social-menu li a:hover,
+         .social-menu li a:link:hover {
           background-color: #efefef; }
 
 /*# sourceMappingURL=style.css.map */

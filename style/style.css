@@ -304,7 +304,7 @@ main {
     color: #555;
     padding: 7.5px 30px 5.5px;
     margin: 7.5px 30px;
-    border: 2px solid #D1EFD1;
+    border: 2px solid #555;
     border-radius: 3px;}
     @media screen and (max-width: 719px) {
       #actions a,
@@ -312,7 +312,8 @@ main {
         margin: 15px 0; } }
     #actions a:hover,
     #actions a:link:hover {
-      border-color: #E62E59; }
+      border-color: #E62E59;
+      color: #E62E59;}
 
 #order {
   display: flex;
